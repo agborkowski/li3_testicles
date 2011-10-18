@@ -1,7 +1,7 @@
 <?php
 
-use \lithium\action\Dispatcher;
-use \lithium\net\http\Router;
+use lithium\action\Dispatcher;
+use lithium\net\http\Router;
 
 Dispatcher::applyFilter('run', function($self, $params, $chain) {
 	$response = $chain->next($self, $params, $chain);
